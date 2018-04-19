@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Birthday Presents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap. @see version in pom.xml -->
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="text-center">
+
+    <div id="main">
+        <h1>Congratulations!</h1>
+
+        <p>You have received the following birthday present:</p>
+        <h2>IPhone 7 Rose Gold</h2>
+        <img src="images/iphone7-plus-rosegold.jpeg"/>
+        <h2>Do you want?</h2>
+        <div class="btn-group">
+            <button id="yes" type="button" class="btn btn-success">Yes! <i class="em em-smiley"></i></button>
+            <button id="maybe" type="button" class="btn btn-warning">Maybe <i class="em em-thinking_face"></i></button>
+            <button id="no" type="button" class="btn btn-danger">No <i class="em em--1"></i></button>
+        </div>
+    </div>
+
+    <div id="yes-chosen">
+        <h1>Congratulations!</h1>
+
+        <p>You have claimed your birthday present</p>
+    </div>
+
+    <div id="no-option">
+        <h1>Congratulations!</h1>
+
+        <p>You have received some bananas instead: <i class="em em-laughing"></i></p>
+        <img src="images/bananas.jpg"/>
+    </div>
+
+</body>
+
+<script>
+    $('document').ready(function(){
+        $('#yes-chosen').hide();
+        $('#no-option').hide();
+
+        $('#yes').click(function(){
+		    $('#main').hide();
+		    $('#yes-chosen').show();
+	    });
+
+	    $('#no').click(function(){
+		    $('#main').hide();
+		    $('#no-option').show();
+	    });
+    });
+</script>
+
+</html>
