@@ -1,4 +1,4 @@
-package com.mycompany.birthday.birthdayapp;
+package com.mycompany.presents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.mycompany.birthday.birthdayapp;
+package com.mycompany.presents;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
